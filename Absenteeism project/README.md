@@ -21,7 +21,8 @@ This dataset is taken from Kaggle which is famous for it employment service and 
 *	Children 
 *	Pets
 *	Absenteeism Time in Hours
-*	
+
+
 
 ## Data Cleaning
 After collecting the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
@@ -31,13 +32,15 @@ After collecting the data, I needed to clean it up so that it was usable for our
 *	Reordered the 4 reason columns like original dataset order
 *	Converted date string data type to datetime datatype 
 *	Made a new columns for Month value and Day of the week
+*	And made many more changes which can be viewed in the pre-processed data csv
 
-## EDA
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
+## Exploratory Data Analysis (EDA)
+Performed EDA on the cleaned data and got various insights, relationships, etc, few of them are as below.
 
-![alt text](https://github.com/PlayingNumbers/ds_salary_proj/blob/master/salary_by_job_title.PNG "Salary by Position")
-![alt text](https://github.com/PlayingNumbers/ds_salary_proj/blob/master/positions_by_state.png "Job Opportunities by State")
-![alt text](https://github.com/PlayingNumbers/ds_salary_proj/blob/master/correlation_visual.png "Correlations")
+* There are total 700 rows and 14 columns after pre-processed data
+* There are total 28 unique type of values presents in the Reason for absence column
+* 4 types of values presents in the Education column, highest being the value 1
+
 
 ## Model Building 
 
