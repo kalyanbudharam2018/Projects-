@@ -65,12 +65,13 @@ In this step, I saved the prepared model using pickle module for further deploym
 ## Code and Resources Used 
 **Python Version:** 3.7  
 **Packages:** pandas, numpy, sklearn, pickle
+
 **The Data Science Course 2022: Complete Data Science Bootcamp**
 https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/
+
 **Ken Jee Youtube channel**
 https://www.youtube.com/c/KenJee1
-**Dataset:**
-https://www.kaggle.com/datasets/
+
 
 
 
