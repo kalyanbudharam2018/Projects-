@@ -53,7 +53,7 @@ I tried three different models:
 
 ## Model performance
 The Logistic Regression model far outperformed the other approaches on the test and validation sets. 
-*	**Logistic Regression** : MAE = 24%
+*	**Logistic Regression** : 73%
 
 
 
