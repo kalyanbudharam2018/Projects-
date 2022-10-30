@@ -1,7 +1,7 @@
 
-# Absenteeism during work time: Project Overview 
+# Prediction of Absenteeism during work time: Project Overview 
 
-* Created a tool that predicts absenteeism at a company during work time which will helpful to regulate working activity and also explore whethera person presenting certain characteristics is expected to be away from work at some point time or not.
+* Created a tool that predicts absenteeism at a company during work time which will helpful to regulate working activity and also explore whether a person presenting certain characteristics is expected to be away from work at some point time or not.
 
 * I have collected data from Kaggle in csv file, Pre-processed (Cleaning/ Analysis) data with Python & SQL, finally saved pre-processed data in csv file.
 * Applied Feature Engineering, Logistic Regression (ML) with sklearn, obtained 73% accuracy, saved model using pickle
@@ -46,13 +46,13 @@ Performed EDA on the cleaned data and got various insights, relationships, etc, 
 
 First, I transformed the categorical variables into dummy variables, then scaled with standard scaler from sk-learn. I also split the data into train and tests sets with a test size of 20%.   
 
-I tried Logistic Regression model and evaluated using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.   
+I tried Logistic Regression model and evaluated. 
 
-I tried three different models:
+I tried Logistic regression model:
 *	**Logistic Regression** – for prediction of categorical outcomes, with the sparsity associated with the data, I thought that this would be a good fit.  
 
 ## Model performance
-The Logistic Regression model far outperformed the other approaches on the test and validation sets. 
+The Logistic Regression model performed good on the test and validation sets. 
 *	**Logistic Regression** : 73%
 
 
