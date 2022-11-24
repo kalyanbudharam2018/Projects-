@@ -1,84 +1,59 @@
 # Prediction of Customer Audiobooks Project Overview 
 
+### Problem 
+
+You are given data from an Audiobook App. Logically, it relates to the audio versions of books ONLY. Each customer in the database has made a purchase at least once, that's why he/she is in the database. We want to create a machine learning algorithm based on our available data that can predict if a customer will buy again from the Audiobook company.
+
+The task is simple: create a machine learning algorithm, which is able to predict if a customer will buy again. 
+
+This is a classification problem with two classes: won't buy and will buy, represented by 0s and 1s. 
+
+
+Summary:
+
 * Collected ‘AudioBook App' dataset from Kaggle, then Pre-processed, Balanced, Normalized & saved in npz files with Python & its libraries (Numpy, Sci-kit Learn).
 * Built a Deep Learning Model (with layers as 10, 50, 2), applied early-stopping mechanism, Adam optimizer and obtained 91.07% Model Accuracy with Numpy & TensorFlow.
 
 
 ## Dataset:
-The datasets are taken from client and data has following features:
-### Transaction (size_264836 rows × 8 columns):
-*	DATE 
-*	STORE_NBR 
-*	LYLTY_CARD_NBR 
-*	TXN_ID 
-*	PROD_NBR
-*	PROD_NAME
-*	PROD_QTY 
-*	TOT_SALES
+The datasets are taken from Kaggle (size_14084 rows × 12 columns).
 
-### Behaviours (size_72637 rows × 3 columns):
-*	LYLTY_CARD_NBR 
-*	LIFESTAGE
-*	PREMIUM_CUSTOMER
+## Balance the dataset
+After collecting the data, I needed to balance the data so that it was usable for further processing. I made balancing the data by removing redundant records.
 
+## Standardizing the dataset
+* Used sklearn functionality to take advantage of its preprocessing capabilities for standardizing the inputs.
 
+## Shuffle the dataset
+* When the data was collected it was actually arranged by date
+* Shuffle the indices of the data, so the data is not arranged in any way when I feed it.
+* Used the shuffled indices to shuffle the inputs and targets.
 
-## Data Cleaning
-After collecting the data, I needed to clean it up so that it was usable for further processing. I made the following changes and created the following variables:
-
-* Converted date string data type to datetime datatype 
-* Extracted first name from product name as the brand name
-* Extracted the last word from product namewhich is the pkg details
-* Extracted only numeric characters as weight term
-* Filled missing or null values with mode value
-*	Dropping unnecessary ID column from dataset
-*	Removed duplicate rows
-*	Merged two tables on a common column
-*	And made many more changes which can be viewed in the pre-processed data in csv file
-
-
-## Exploratory Data Analysis (EDA)
-Performed EDA on the cleaned data and got various insights, relationships, etc, few of them are as below.
-![image](https://user-images.githubusercontent.com/112246352/198828788-ab2ebac1-c6f8-4df4-98b2-138d291b52ac.png)
-
-![image](https://user-images.githubusercontent.com/112246352/198828801-f867aee8-1fd6-4d23-9da1-6c12c5135612.png)
-
-
-![image](https://user-images.githubusercontent.com/112246352/198828807-2ad0afb4-bc9b-423e-9a34-14af3fe81d3f.png)
-
-
+## Split the dataset into train, validation, and test and finally saved the three datasets in *.npz for further modelling.
 
 
 ## Analytics and commercial application
  
-In this task, I saved the prepared files for further application. From previous tasks, I prepared a report for the client and the Category Manager. Report mainly consists of following details:
-### Chips Category Review
-● Chips transactions increase substantially prior to Christmas. It is a good time totake advantage of this momentum with promotional offers.
-● Older and Young Family segment have the highest average purchase units per
-unique customer.
-● Sales mainly came from Budget - older families, Mainstream - young
-singles/couples, and Mainstream -retirees. In total contributing 25% of sales
-revenue.
+In this task, I saved the prepared files for further application. I loaded the saved npz files and built deep learning model (Neural networks) with TensorFlow having following details.
+ 
+ * input_size = 10
+ * output_size = 2
+ * hidden_layer_size = 50
+ * activation functions- relu and softmax
+ * optimizer - adam
+ * batch size and max_epochs - 100
+ * Applied an early stopping mechanism wit patience=2
+ 
+ ## Model Performance
+ After the model tested and obtained accuracy- 91.07% with test loss- 24% 
 
-### Trial Store Analysis
-● Trial store 77 and 86 experienced significant increase in Total Sales and
-Customers quantity during the trial period compared to their control stores..
-● Trial store 88 experience increase as well, but insignificant compared to
-its’ Control store.
 
 
 
 
 ## Code and Resources Used 
 **Python Version:** 3.7  
-**Packages:** pandas, numpy, seaborn, matplotlib
+**Packages:** numpy, TensorFlow
 
-**Quantium_Forage website**
-https://www.theforage.com/virtual-internships/NkaC7knWtjSbi6aYv?ref=GoP4G9dwRbsQ3n9PB
-
-
-
-
-
-
-
+**Kaggle Website for Data source**
+https://www.kaggle.com/
