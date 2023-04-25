@@ -12,6 +12,7 @@ Answer:
 * Python code for the above question:
 
 '''
+
 def lengthOfLongestSubstring(s: str) -> int:
     n = len(s)
     seen = {}
