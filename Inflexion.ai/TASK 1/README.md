@@ -14,10 +14,15 @@ Answer:
 '''
 
 def lengthOfLongestSubstring(s: str) -> int:
+
     n = len(s)
+    
     seen = {}
+    
     left = 0
+    
     right = 0
+    
     max_len = 0
     
     while right < n:
