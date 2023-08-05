@@ -18,13 +18,15 @@ It tracks the progress of the match, including innings, overs, scores, and wicke
 The match is played in two innings, and each inning has a specified number of overs.
 After the first innings is completed, the innings is changed, and the second innings begins.
 The match ends after the second innings, and the final result is displayed based on the scores of both teams.
-Simulation Logic:
+
+* Simulation Logic:
 
 The match simulation is performed by the simulate_match method in the Match class.
 The method simulates each ball and over of both innings using the Umpire and Commentator classes.
 The outcome of each ball, such as runs scored and wickets, is determined based on the players' probabilities.
 The scores and wickets are updated accordingly, and commentary is provided for each ball and over.
-Output:
+
+* Output:
 
 The program provides output throughout the simulation, including commentary for each ball and over.
 The final output displays the final scores of both teams, the number of wickets lost, and the match result (Team 1 wins, Team 2 wins, or a tie).
@@ -32,10 +34,13 @@ The final output displays the final scores of both teams, the number of wickets 
 
 * Methodology Used:
 
-The program follows an object-oriented approach, with each entity represented as a class with its attributes and methods.
-The simulation logic uses random number generation to predict ball outcomes based on player probabilities.
-The match is simulated using a loop to play each ball and over, and the innings are switched when required.
-The match results are calculated based on the scores and wickets of both teams at the end of the match.
+- The program follows an object-oriented approach, with each entity represented as a class with its attributes and methods.
+- The simulation logic uses random number generation to predict ball outcomes based on player probabilities.
+- The match is simulated using a loop to play each ball and over, and the innings are switched when required.
+- The match results are calculated based on the scores and wickets of both teams at the end of the match.
+
+
+
 Overall, the Cricket Tournament Simulation Program provides a basic and simplified simulation of a cricket match with two teams. It showcases how different classes can interact to create a realistic simulation of real-world scenarios. Depending on the complexity and depth required, additional features and details can be added to enhance the simulation further.
 
 
